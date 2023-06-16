@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Wix+Madefor+Text:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f9fbe7;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@import "./home";
+@import "./register";
+@import "./login";
+@import "./user";
+@import "./edit";

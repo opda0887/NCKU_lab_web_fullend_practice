@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Wix+Madefor+Text:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f9fbe7;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nckupract__app__homepage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  padding-top: 5rem;
+}
+.nckupract__app__homepage::before, .nckupract__app__homepage::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.nckupract__app__homepage::before {
+  width: 150px;
+  height: 150px;
+  background: rgb(224, 90, 90);
+  top: 0px;
+  right: 150px;
+}
+.nckupract__app__homepage::after {
+  width: 100px;
+  height: 100px;
+  background: rgb(224, 170, 90);
+  bottom: 20px;
+  left: 250px;
+}
+.nckupract__app__homepage h1 {
+  font-size: 5rem;
+  margin-bottom: 7rem;
+}
+.nckupract__app__homepage a {
+  transform: scale(1.5);
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.25s ease;
+}
+.nckupract__app__homepage .login {
+  margin-bottom: 2.5rem;
+  background-color: rgb(170, 224, 90);
+  color: rgb(67, 67, 67);
+}
+.nckupract__app__homepage .login:hover {
+  background-color: rgb(124, 172, 53);
+}
+.nckupract__app__homepage .register {
+  margin-bottom: 8rem;
+  background-color: rgb(56, 51, 183);
+  color: rgb(239, 239, 239);
+}
+.nckupract__app__homepage .register:hover {
+  background-color: rgb(40, 37, 126);
+}
+
+.nckupract__app__registerpage {
+  transform: scale(1.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+.nckupract__app__registerpage h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.nckupract__app__registerpage form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.nckupract__app__registerpage form input {
+  margin-bottom: 1rem;
+}
+.nckupract__app__registerpage button {
+  background-color: rgb(56, 51, 183);
+  color: rgb(239, 239, 239);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  transition: all 0.25s ease;
+}
+.nckupract__app__registerpage button:hover {
+  background-color: rgb(40, 37, 126);
+}
+
+.nckupract__app__loginpage {
+  transform: scale(1.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+.nckupract__app__loginpage h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.nckupract__app__loginpage form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.nckupract__app__loginpage form input {
+  margin-bottom: 1rem;
+}
+.nckupract__app__loginpage button {
+  background-color: rgb(170, 224, 90);
+  color: rgb(67, 67, 67);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  transition: all 0.25s ease;
+}
+.nckupract__app__loginpage button:hover {
+  background-color: rgb(124, 172, 53);
+}
+
+.nckupract__app__userdetails {
+  transform: scale(1.2);
+}
+.nckupract__app__userdetails .nckupract__app__userdetails-userbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nckupract__app__userdetails .nckupract__app__userdetails-userbox h2 {
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.nckupract__app__userdetails .nckupract__app__userdetails-userbox p {
+  margin-top: 1rem;
+}
+.nckupract__app__userdetails .nckupract__app__userdetails-userbox a {
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 3rem;
+  transition: all 0.25s ease;
+  background-color: rgb(224, 170, 90);
+  color: rgb(67, 67, 67);
+}
+.nckupract__app__userdetails .nckupract__app__userdetails-userbox a:hover {
+  background-color: rgb(172, 121, 53);
+}
+.nckupract__app__userdetails .nckupract__app__userdetails-userbox button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  transition: all 0.25s ease;
+  background-color: rgb(224, 90, 90);
+  color: rgb(67, 67, 67);
+}
+.nckupract__app__userdetails .nckupract__app__userdetails-userbox button:hover {
+  background-color: rgb(172, 53, 53);
+}
+
+.nckupract__app__editpage {
+  transform: scale(1.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+.nckupract__app__editpage h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.nckupract__app__editpage form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.nckupract__app__editpage form input {
+  margin-bottom: 1rem;
+}
+.nckupract__app__editpage button {
+  background-color: rgb(224, 170, 90);
+  color: rgb(67, 67, 67);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  transition: all 0.25s ease;
+}
+.nckupract__app__editpage button:hover {
+  background-color: rgb(172, 121, 53);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+$login_bg: rgb(170, 224, 90);
+$login_bg__hover: rgb(124, 172, 53);
+$login_txt: rgb(67, 67, 67);
+$register_bg: rgb(56, 51, 183);
+$register_bg__hover: rgb(40, 37, 126);
+$register_txt: rgb(239, 239, 239);
+
+.nckupract__app__homepage {
+  position: relative; // 給圖形做 relative
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  padding-top: 5rem;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%; // 圆形形状
+  }
+
+  &::before {
+    width: 150px; // 第一個圓形的大小
+    height: 150px;
+    background: rgb(224, 90, 90); // 第一个圓形的颜色
+    top: 0px; // 距離頂部的距離
+    right: 150px; // 距離右側的距離
+  }
+
+  &::after {
+    width: 100px; // 第二個圓形的大小
+    height: 100px;
+    background: rgb(224, 170, 90); // 第二個圓形的颜色
+    bottom: 20px; // 距離底部的距離
+    left: 250px; // 距離左側的距離
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 7rem;
+  }
+  a {
+    transform: scale(1.5);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.25s ease;
+  }
+  .login {
+    margin-bottom: 2.5rem;
+    background-color: $login_bg;
+    color: $login_txt;
+    &:hover {
+      background-color: $login_bg__hover;
+    }
+  }
+  .register {
+    margin-bottom: 8rem;
+    background-color: $register_bg;
+    color: $register_txt;
+    &:hover {
+      background-color: $register_bg__hover;
+    }
+  }
+}
